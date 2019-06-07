@@ -10,6 +10,10 @@ path = r'C:\Users\ignac_000\proyects/'
 browser = webdriver.Firefox(executable_path=r'C:\Users\ignac_000\proyects\scripts\geckodriver.exe');
 browser.get('https://github.com/login')
 
+def navtype(where, what):
+    element = browser.find_element_by_xpath(where)
+    element.send_keys(what)
+
 def create():
     proyectname = str(sys.argv[1])
     os.makedirs(path + proyectname)
