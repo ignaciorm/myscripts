@@ -19,7 +19,7 @@ def navclick(where):
     element.click()
 
 def create():
-    proyectname = "this is only a test"
+    proyectname = str(sys.argv[1])
     os.makedirs(path + proyectname)
     print('Folder created')
     open(path + proyectname + '/README.txt' , 'w+').close()
