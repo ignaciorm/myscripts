@@ -3,12 +3,12 @@
         Param($foldername)
         #Write-Host $foldername
         
-        cd C:\Users\ignac_000\proyects\scripts
+        cd C:\Users\Ignacio\Proyects\myscripts
         python create.py $foldername
         Write-Host "Python script executed--
         Folder and README created, initiated github repo"
         
-        cd C:\Users\ignac_000\proyects/$foldername
+        cd C:\Users\Ignacio\Proyects/$foldername
         
         git init
         git add .

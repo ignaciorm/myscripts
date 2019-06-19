@@ -6,8 +6,8 @@ from selenium.webdriver.common.keys import Keys
 
 print("Python runing")
 
-path = r'C:\Users\ignac_000\proyects/'
-browser = webdriver.Firefox(executable_path=r'C:\Users\ignac_000\proyects\scripts\geckodriver.exe');
+path = r'C:\Users\Ignacio\Proyects/'
+browser = webdriver.Firefox(executable_path=r'C:\Users\Ignacio\Proyects\myscripts\geckodriver.exe');
 browser.get('https://github.com/login')
 
 def navtype(where, what):
